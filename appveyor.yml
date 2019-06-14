@@ -1,6 +1,6 @@
 version: 5.{build}
 
-platform: x32
+platform: x86
 
 clone_folder: c:\gopath\src\github.com\rqlite\rqlite
 
