@@ -2,6 +2,10 @@ version: 5.{build}
 
 platform: x86
 
+stack:
+  - go 110-x86
+  - msys
+
 clone_folder: c:\gopath\src\github.com\rqlite\rqlite
 
 environment:
@@ -9,7 +13,7 @@ environment:
 
 install:
   - set BUILD_ENV=gnu
-  - if %BUILD_ENV%==gnu  set PATH=C:\msys32\mingw32\bin;C:\msys32\usr\bin\;%PATH%
+  - if %BUILD_ENV%==gnu  set PATH= C:\MinGW\bin;C:\MinGW\msys\1.0\bin;%PATH%
   - if %BUILD_ENV%==gnu  set MSYSTEM=MINGW32
   - if %BUILD_ENV%==gnu  set MSYS=winsymlinks=lnk
 
