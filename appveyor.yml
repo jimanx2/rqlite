@@ -1,6 +1,6 @@
 version: 5.{build}
 
-platform: x64
+platform: x32
 
 clone_folder: c:\gopath\src\github.com\rqlite\rqlite
 
@@ -23,5 +23,5 @@ after_build:
   - 7z a rqlite-latest-win64.zip %GOPATH%\bin\rq*.exe
 
 artifacts:
-  - path: rqlite-latest-win64.zip
-    name: rqlite for Windows x64
+  - path: rqlite-latest-win32.zip
+    name: rqlite for Windows x86
